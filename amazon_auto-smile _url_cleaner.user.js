@@ -1,11 +1,12 @@
 // ==UserScript==
 // @name         Amazon Auto-Smile / URL Cleaner
 // @namespace    https://github.com/r3t3ch/userscripts
-// @version      0.9
+// @version      1.0
 // @description  Redirects Amazon.com product URLs to AmazonSmile and removes unnecessary variables (like affiliate tag)
-// @include      /^https?:\/\/www\.amazon\.com\/(.+)?(dp|gp|exec)\/.+/
-// @exclude      /^https?:\/\/www\.amazon\.com\/.+pldnSite=1.*/
-// @exclude      /^https?:\/\/www\.amazon\.com\/gp\/(help\/|mas\/|feature\.html|item-dispatch|.+\/ref=olp_page).*/
+// @icon         https://smile.amazon.com/favicon.ico
+// @include      /^https:\/\/www\.amazon\.(com|co\.uk|de)\/(.+)?(dp|gp|exec|product|d\/(.+))\/(\S{10})(\/.*|\?.*|$)/
+// @include      /^https:\/\/www\.amazon\.(com|co\.uk|de)\/gp\/(cart|buy).+/
+// @exclude      /^https:\/\/www\.amazon\.(com|co\.uk|de)\/.+(pldnSite=1).*/
 // @run-at       document-start
 // ==/UserScript==
 
